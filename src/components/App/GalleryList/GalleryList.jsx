@@ -1,11 +1,11 @@
-import GalleryItem from "../GalleryItem/GalleryItem";
+import GalleryItem from "./GalleryItem";
 
 function galleryList(props){
-    console.log('inside the galleryList', props.galleryList[0]);
+
     return(
         <ul>
-            {props.map(galleryList => (
-                <GalleryItem key={galleryList.id} props={galleryList}/>
+            {props.galleryList.map((galleryList) => (
+                <GalleryItem key={galleryList.id} galleryList={galleryList}/>
             ))}
         </ul>
     );
