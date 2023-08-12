@@ -11,4 +11,4 @@ function galleryList(props){
     );
 }
 
-export default galleryList
+export default galleryList;
