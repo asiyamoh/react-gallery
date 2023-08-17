@@ -4,6 +4,7 @@ import axios from 'axios'
 import {useState,useEffect} from 'react'
 import GalleryList from '../GalleryList/GalleryList';
 
+
 function App() {
 
   const [galleryList, setGalleryList] = useState([])
@@ -29,7 +30,7 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        {/* <img src="images/goat_small.jpg"/> */}
         <GalleryList galleryList={galleryList}/>
       </div>
     );
